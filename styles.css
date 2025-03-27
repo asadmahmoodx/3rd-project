@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+  background-color: #2d9cdb;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#hero .hero-text h2 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Content Sections */
+#about, #projects, #certifications, #contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .project-card {
+      padding: 15px;
+  }
+}
